@@ -1,18 +1,33 @@
-*.iml
-.kotlin
-.gradle
-**/build/
-xcuserdata
-!src/**/build/
-local.properties
-.idea
+# macOS
 .DS_Store
-captures
-.externalNativeBuild
-.cxx
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcodeproj/project.xcworkspace/
-!*.xcworkspace/contents.xcworkspacedata
-**/xcshareddata/WorkspaceSettings.xcsettings
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+.gradle/
+build/
+*/build/
+
+# Android
+local.properties
+*.keystore
+*.jks
+
+# Kotlin/Gradle
+**/out/
+.gradle/
+**/.kotlin/
+**/kotlin-js-store/
+
+# iOS / Xcode
+**/DerivedData/
+**/*.xcuserstate
+**/*.xcworkspace/xcuserdata/
+**/*.xcodeproj/project.xcworkspace/xcuserdata/
+**/*.xcodeproj/xcuserdata/
+Pods/
+# Si usas CocoaPods y quieres fijar versiones, puedes versionar Podfile.lock:
+# Podfile.lock
+
+# KMP artifacts pesados (opcional si los generas en CI)
+**/*.xcframework/
